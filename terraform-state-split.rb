@@ -7,6 +7,7 @@ class TerraformStateSplit < Formula
   license "MIT"
 
   def install
+    ENV["GEM_HOME"] = "#{prefix}/vendor"
     system "gem", "install", "tty-prompt", "--no-document"
     bin.install "terraform-state-split"
   end
