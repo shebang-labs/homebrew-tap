@@ -1,4 +1,5 @@
 class TerraformStateSplit < Formula
+  depends_on "ruby"
   desc "This ruby CLI tool helps you organise large terraform state files into smaller ones by moving chosen resources from a provided state file into another destination state file."
   homepage "https://github.com/shebang-labs/terraform-state-split"
   url "https://github.com/shebang-labs/terraform-state-split/releases/download/1.0.0/terraform-state-split.tar.gz"
@@ -6,6 +7,7 @@ class TerraformStateSplit < Formula
   license "MIT"
 
   def install
+    system "gem install tty-prompt"
     bin.install "terraform-state-split"
   end
 
@@ -13,4 +15,3 @@ class TerraformStateSplit < Formula
     system "#{bin}/terraform-state-split"
   end
 end
-
