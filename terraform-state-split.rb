@@ -7,10 +7,10 @@ class TerraformStateSplit < Formula
   license "MIT"
 
   def install
-    ENV["GEM_HOME"] = $($(brew --prefix)/opt/ruby/bin/gem environment gemdir)
-    ENV["GEM_PATH"] = $($(brew --prefix)/opt/ruby/bin/gem environment gemdir)
+    ENV["GEM_HOME"] = system "#{HOMEBREW_PREFIX}/opt/ruby/bin/gem environment gemdir"
+    ENV["GEM_PATH"] = system "#{HOMEBREW_PREFIX}/opt/ruby/bin/gem environment gemdir"
 
-    system "gem", "install", "tty-prompt", "--no-document"
+    system "#{HOMEBREW_PREFIX}/opt/ruby/bin/gem", "install", "tty-prompt", "--no-document"
     bin.install "terraform-state-split"
   end
 
