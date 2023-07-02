@@ -7,9 +7,9 @@ class TerraformStateSplit < Formula
   license "MIT"
 
   def install
-    #ENV["GEM_HOME"] = libexec
-    #ENV["GEM_PATH"] = libexec
-    system "gem install tty-prompt --user-install"
+    ENV["GEM_HOME"] = libexec
+    ENV["GEM_PATH"] = libexec
+    system "/opt/homebrew/opt/ruby/bin/gem install tty-prompt"
     bin.install "terraform-state-split"
   end
 
