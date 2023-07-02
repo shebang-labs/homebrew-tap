@@ -6,7 +6,6 @@ class TerraformStateSplit < Formula
   license "MIT"
 
   def install
-    system "gem install tty-prompt"
     bin.install "terraform-state-split"
   end
 
