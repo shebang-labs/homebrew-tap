@@ -8,7 +8,7 @@ class TerraformStateSplit < Formula
   uses_from_macos "ruby"
 
   def install
-    system "gem", "install", "tty-prompt", "--user-install"
+    system "gem", "install", "tty-prompt", "--local"
     bin.install "terraform-state-split"
   end
 
