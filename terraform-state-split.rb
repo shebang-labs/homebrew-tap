@@ -11,9 +11,9 @@ class TerraformStateSplit < Formula
     ENV["GEM_HOME"] = lib
     system "gem", "install", "tty-prompt"
     inreplace "terraform-state-split", "require 'tty-prompt'", <<-EOS
-      ENV["GEM_HOME"]=#{lib}
-      Gem.clear_paths
-      require 'tty-prompt'
+ENV["GEM_HOME"]="#{lib}"
+Gem.clear_paths
+require 'tty-prompt'
     EOS
     bin.install "terraform-state-split"
   end
