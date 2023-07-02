@@ -5,6 +5,8 @@ class TerraformStateSplit < Formula
   sha256 "010905a4d444dd4ffb4dc8ded7e239d52d678cd0d33873d468622cdbc3d71c69"
   license "MIT"
 
+  uses_from_macos "ruby"
+
   def install
     ENV["GEM_HOME"] = libexec
     system "gem", "install", "tty-prompt"
