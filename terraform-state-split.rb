@@ -8,7 +8,8 @@ class TerraformStateSplit < Formula
   uses_from_macos "ruby"
 
   def install
-    system "gem", "install", "tty-prompt", "--install-dir #{lib}"
+    ENV["GEM_HOME"] = lib
+    system "gem", "install", "tty-prompt"
     bin.install "terraform-state-split"
   end
 
