@@ -3,7 +3,7 @@ class TerraformStateSplit < Formula
   homepage "https://github.com/shebang-labs/terraform-state-split"
   url "https://github.com/shebang-labs/terraform-state-split/releases/download/1.0.0/terraform-state-split.tar.gz"
   license "MIT"
-  sha256 "893741038de59e37fcb267a3cf749943148a4434ad7b2e5043e269588b62dc53"
+  sha256 "58bf2fed14f2b8879f8e07f9a76658d14898b79ddd902bcfc133c36dfe1e97a9"
 
   uses_from_macos "ruby"
 
