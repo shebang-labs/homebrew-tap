@@ -1,9 +1,9 @@
 class TerraformStateSplit < Formula
   desc "This ruby CLI tool helps you organise large terraform state files into smaller ones by moving chosen resources from a provided state file into another destination state file."
   homepage "https://github.com/shebang-labs/terraform-state-split"
-  url "https://github.com/shebang-labs/terraform-state-split/releases/download/1.0.0/terraform-state-split.tar.gz"
+  url "https://github.com/shebang-labs/terraform-state-split/releases/download/1.0.1/terraform-state-split.tar.gz"
   license "MIT"
-  sha256 "58bf2fed14f2b8879f8e07f9a76658d14898b79ddd902bcfc133c36dfe1e97a9"
+  sha256 "ea4eab7d54ac6456cbe9174ec79d764ca4f91dbfd3ff945977fa9bc8fc320141"
 
   uses_from_macos "ruby"
 
